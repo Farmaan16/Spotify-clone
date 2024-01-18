@@ -56,18 +56,21 @@ body {
   gap: 13px;
   position: absolute;
   bottom: 0;
+  padding: 10px 0;
 }
 .footer a {
   color: grey;
 }
 .right {
   margin: 15px 0;
+  position: relative;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   background-color: #202020;
+  height: 72px;
 }
 .header * {
   padding: 20px;
@@ -78,17 +81,21 @@ body {
 }
 
 .cardContainer {
-    margin: 30px;
+  margin: 30px;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 60vh;
 }
 
 .card {
+  position: relative;
   width: 200px;
   padding: 10px;
   border-radius: 5px;
   background-color: #1f1e1e;
+  transition: all 0.9s;
 }
 .card > * {
   padding-top: 10px;
@@ -98,4 +105,68 @@ body {
   width: 100%;
   object-fit: contain;
   border-radius: 5px;
+}
+.play {
+  bottom: 109px;
+  right: 16px;
+  position: absolute;
+}
+
+.buttons > * {
+  margin: 0 12px;
+  margin-top: -18px;
+}
+
+.signupbtn {
+  background-color: #202020;
+  color: grey;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signupbtn:hover {
+  font-size: 17px;
+  color: white;
+}
+
+.loginbtn {
+  background-color: white;
+  border-radius: 22px;
+  color: black;
+  padding: 10px;
+  width: 80px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.loginbtn:hover {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.playbar {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(201, 201, 201);
+  width: 100%;
+  padding: 12px;
+}
+
+.songbuttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.songlist ul {
+  padding: 0 42px;
+}
+
+.songlist ul li {
+  list-style-type: decimal;
 }
